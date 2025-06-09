@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f2ff;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 0px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.header-content p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.logo {
+  height: 150px;
+  margin-bottom: -10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: rgb(22, 21, 21);
+  text-align: center;
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+}
+
+.price-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.price-btn:hover {
+  background-color: #2980b9;
+}
+
+.qr-container {
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: white;
+}
+
+.payment-instructions {
+  background: #e8f4fc;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.upi-id {
+  font-weight: bold;
+  background: #d6eaf8;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.registration-form {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgb(240, 248, 255);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #219653;
+}
+
+.notification {
+  display: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.email-btn {
+  background-color: #D44638;
+}
+
+.contact-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

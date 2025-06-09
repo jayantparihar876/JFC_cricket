@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JFC Box Cricket - Payments & Registration</title>
+  <link rel="stylesheet" href="JFC.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="../WhatsApp_Image_2025-06-08_at_15.17.16_a52ac1a3-removebg-preview.png" alt="JFC Box Cricket Logo" class="logo">
+    </div>
+  </header>
+  
+  <div class="container">
+    <h1>Registration & Payments</h1>
+    
+    <div class="registration-form">
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="number" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="preferredTime">Preferred Time Slot</label>
+            <select id="preferredTime" name="preferredTime" required>
+                <option value="" disabled selected>Select Time Slot</option>
+                <option value="morning">Morning (8am - 11am)</option>
+                <option value="afternoon">Afternoon (12pm - 3pm)</option>
+                <option value="evening">Evening (4pm - 7pm)</option>
+                 <option value="night">Night (8pm - 12pm)</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="package">Select Package:</label>
+          <select id="package" name="package" required>
+            <option value="">-- Select --</option>
+            <option value="2500">Friendly Match - ₹2500</option>
+            <option value="3000">3 Match Package - ₹3000</option>
+            <option value="5000">Tournament Entry - ₹5000</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Register & Proceed to Payment</button>
+      </form>
+      <div id="notification" class="notification"></div>
+      
+    </div>
+    
+    <div class="payment-options" id="paymentOptions" style="display: none;">
+      <div class="payment-option">
+        <h2 id="selectedPackageTitle">Selected Package</h2>
+        <p id="selectedPackageDesc"></p>
+        <button class="price-btn" id="payNowBtn">Pay Now</button>
+        <div class="qr-container" id="qr-container">
+          <img class="qr-code" id="qr-img">
+          <p id="qr-instruction">Scan to pay</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-instructions">
+      <h3>Payment Instructions</h3>
+      <p>1. Complete the registration form above</p>
+      <p>2. Click "Pay Now" to generate payment QR code</p>
+      <p>3. Scan the QR code with any UPI app</p>
+      <p>Or send payment manually to:</p>
+      <p class="upi-id">mrprinceparihar007@okhdfcbank</p>
+      
+      <div class="contact-buttons">
+        <a href="https://wa.me/918302507327?text=Hello%20JFC%20Box%20Cricket,%20I've%20completed%20registration%20and%20payment" class="contact-btn whatsapp-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="mailto:jayantparihar876@gmail.com?subject=JFC%20Registration%20Confirmation&body=Hello,%20I've%20completed%20registration%20and%20payment.%20My%20details%20are%3A%0D%0AName%3A%0D%0APhone%3A%0D%0APackage%3A" class="contact-btn email-btn" target="_blank">
+          <i class="fas fa-envelope"></i> Email Us
+        </a>
+        
+      </div>
+      
+      <p>After payment, please share payment screenshot via WhatsApp or Email</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Tournaments</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="jayantparihar876@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="jayantparihar876@gmail.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/918302507327" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 JFC Box Cricket. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="JFC.js"></script>
+</body>
+</html>
