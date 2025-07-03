@@ -1,13 +1,23 @@
+:root {
+    --primary: #007bff;
+    --secondary: #0056b3;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-gray: #333333;
+    --error: #e74c3c;
+    --success: #2ecc71;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #e6f2ff;
+  background-color: whitesmoke;
 }
 
 header {
-  background-color: #007bff;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   padding: 0px 0;
   text-align: center;
@@ -17,6 +27,7 @@ header {
 .header-content {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 0px;
 }
 
 .header-content h1 {
@@ -36,8 +47,9 @@ header {
 }
 
 .container {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0px auto;
   padding: 10px;
   background: white;
   border-radius: 8px;
@@ -58,7 +70,7 @@ h1 {
 }
 
 .price-btn {
-  background-color: #3498db;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 8px 15px;
@@ -87,7 +99,7 @@ h1 {
 }
 
 .payment-instructions {
-  background: #e8f4fc;
+  background: white;
   padding: 15px;
   border-radius: 5px;
   margin-top: 20px;
@@ -95,16 +107,16 @@ h1 {
 
 .upi-id {
   font-weight: bold;
-  background: #d6eaf8;
+  background: whitesmoke;
   padding: 5px 10px;
   border-radius: 4px;
   display: inline-block;
 }
 
 .registration-form {
-  margin-top: 30px;
+  margin-top: -30px;
   padding: 20px;
-  background: rgb(240, 248, 255);
+  background:white;
   border-radius: 8px;
 }
 
@@ -189,11 +201,11 @@ input, select {
 }
 
 footer {
-  background-color: #007bff;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .footer-content {
@@ -230,3 +242,68 @@ footer {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+  .image {
+         height: 520px;
+         width: 95%;
+         margin-top: -20px;
+         padding: 22px;
+         background-size: contain;
+      }   
+ 
+    .text-block {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .image-container {
+        background: none;
+        height: auto;
+        display: block;
+        padding: 0;
+      }
+       .image {
+         height: 520px;
+         width: 95%;
+         margin-top: -20px;
+         padding: 22px;
+         background-size: contain;
+      }   
+      .text-block {
+        background-color: transparent;
+        color: black;
+        padding: 10px;
+      }
+    }
+    @media (max-width: 480px) {
+   .image-container {
+        background: none;
+        height: auto;
+        display: block;
+        padding: 0;
+      }
+       .image {
+        height: 100%;
+        width: 90%;
+        margin-top: -20px;
+        padding: 22px;
+        background-size: contain;
+ }   
+      .text-block {
+        background-color: transparent;
+        color: black;
+        padding: 10px;
+      }
+
+      .image-container {
+        content: "";
+        display: block;
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        aspect-ratio: 16 / 9;
+}
+    }

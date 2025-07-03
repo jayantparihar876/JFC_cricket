@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleMate - Your Ultimate Shoe Destination</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-bold text-gray-900 rounded-lg p-2 transition duration-300 ease-in-out hover:bg-gray-100">
+                Sole<span class="text-blue-600">Mate</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Categories</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pt-2 pb-4 border-t border-gray-200">
+            <nav class="flex flex-col space-y-2 px-4">
+                <a href="#" class="block text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Home</a>
+                <a href="#" class="block text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Shop</a>
+                <a href="#" class="block text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Categories</a>
+                <a href="#" class="block text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">About Us</a>
+                <a href="#" class="block text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-md px-3 py-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 overflow-hidden rounded-b-xl shadow-lg m-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Step Into Style
+                    <span class="block text-blue-200 text-3xl md:text-4xl mt-2">Discover Your Perfect Pair</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up">
+                    Explore our exquisite collection of shoes for every occasion.
+                </p>
+                <button class="bg-white text-blue-700 hover:bg-blue-100 font-bold py-4 px-8 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50">
+                    Shop Now
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end animate-fade-in-right">
+                <!-- Placeholder Image for a cool shoe -->
+                <img src="https://placehold.co/500x350/ffffff/000000?text=Awesome+Shoe" alt="Stylish Shoe" class="rounded-xl shadow-2xl object-cover transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-0 hover:scale-100">
+            </div>
+        </div>
+        <!-- Background elements for visual appeal -->
+        <div class="absolute inset-0 bg-pattern-dots opacity-10"></div>
+    </section>
+
+    <!-- New Arrivals/Featured Products Section -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">New Arrivals</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://placehold.co/400x300/e0e0e0/333333?text=Sneaker" alt="Product 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Urban Street Sneaker</h3>
+                    <p class="text-gray-600 mb-4">Comfortable and stylish for everyday wear.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$99.99</span>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://placehold.co/400x300/d0d0d0/444444?text=Heels" alt="Product 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Elegant Stiletto Heels</h3>
+                    <p class="text-gray-600 mb-4">Perfect for evening events and special occasions.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$129.99</span>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://placehold.co/400x300/c0c0c0/555555?text=Boots" alt="Product 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Rugged Leather Boots</h3>
+                    <p class="text-gray-600 mb-4">Durable and stylish for adventurous souls.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$149.99</span>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://placehold.co/400x300/b0b0b0/666666?text=Sandals" alt="Product 4" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Summer Comfort Sandals</h3>
+                    <p class="text-gray-600 mb-4">Lightweight and breathable for warm weather.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$79.99</span>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <button class="bg-gray-800 text-white py-3 px-8 rounded-full hover:bg-gray-900 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                View All Products
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Shop by Category</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Category Card 1 -->
+            <div class="relative bg-cover bg-center rounded-xl overflow-hidden shadow-lg group transform transition duration-300 hover:scale-105" style="background-image: url('https://placehold.co/600x400/94a3b8/ffffff?text=Men%27s+Shoes');">
+                <div class="absolute inset-0 bg-black opacity-40 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div class="relative p-8 flex flex-col items-center justify-center h-full text-white text-center">
+                    <h3 class="text-3xl font-bold mb-4 z-10">Men's Shoes</h3>
+                    <p class="text-lg mb-6 z-10">Find your perfect fit from our diverse men's collection.</p>
+                    <button class="bg-white text-gray-800 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out shadow-md z-10">Explore Men</button>
+                </div>
+            </div>
+
+            <!-- Category Card 2 -->
+            <div class="relative bg-cover bg-center rounded-xl overflow-hidden shadow-lg group transform transition duration-300 hover:scale-105" style="background-image: url('https://placehold.co/600x400/a3e635/ffffff?text=Women%27s+Shoes');">
+                <div class="absolute inset-0 bg-black opacity-40 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div class="relative p-8 flex flex-col items-center justify-center h-full text-white text-center">
+                    <h3 class="text-3xl font-bold mb-4 z-10">Women's Shoes</h3>
+                    <p class="text-lg mb-6 z-10">Step up your style with our fashionable women's range.</p>
+                    <button class="bg-white text-gray-800 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out shadow-md z-10">Explore Women</button>
+                </div>
+            </div>
+
+            <!-- Category Card 3 -->
+            <div class="relative bg-cover bg-center rounded-xl overflow-hidden shadow-lg group transform transition duration-300 hover:scale-105" style="background-image: url('https://placehold.co/600x400/fcd34d/ffffff?text=Kids%27+Shoes');">
+                <div class="absolute inset-0 bg-black opacity-40 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div class="relative p-8 flex flex-col items-center justify-center h-full text-white text-center">
+                    <h3 class="text-3xl font-bold mb-4 z-10">Kids' Shoes</h3>
+                    <p class="text-lg mb-6 z-10">Durable and fun footwear for little feet.</p>
+                    <button class="bg-white text-gray-800 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out shadow-md z-10">Explore Kids</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Newsletter Section -->
+    <section class="bg-blue-700 text-white py-16 md:py-20 rounded-xl m-4 shadow-lg">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Stay Up-to-Date!</h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">Sign up for our newsletter to get the latest deals and new arrivals.</p>
+            <div class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email address" class="flex-grow p-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-md transition duration-300 ease-in-out">
+                <button class="bg-white text-blue-700 font-bold py-4 px-8 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16 rounded-t-xl">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">SoleMate</h3>
+                <p class="text-gray-400">Your one-stop shop for the latest and greatest footwear. Quality and style, delivered to your door.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Shop All</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Men's Collection</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Women's Collection</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Customer Service</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">FAQ</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Contact Us</h3>
+                <p class="text-gray-400">Email: info@solemate.com</p>
+                <p class="text-gray-400">Phone: +1 (123) 456-7890</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <!-- Placeholder for Facebook Icon -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 8h-2V7h-3v3H7v3h3v5h3v-5h2.5l.5-3z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <!-- Placeholder for Instagram Icon -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 4.5c0-.825-.675-1.5-1.5-1.5S13.5 5.675 13.5 6.5s.675 1.5 1.5 1.5 1.5-.675 1.5-1.5zM12 8c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 2.5c.825 0 1.5.675 1.5 1.5s-.675 1.5-1.5 1.5-1.5-.675-1.5-1.5.675-1.5 1.5-1.5z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <!-- Placeholder for Twitter Icon -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.707 7.707c-.195-.195-.451-.293-.707-.293H14.5V8.5c0-.825-.675-1.5-1.5-1.5h-2c-.825 0-1.5.675-1.5 1.5V9.414H7.293c-.256 0-.512.098-.707.293s-.293.451-.293.707v.586c0 .256.098.512.293.707l2 2c.195.195.451.293.707.293h.586c.256 0 .512-.098.707-.293l2-2c.195-.195.293-.451.293-.707v-.586c0-.256-.098-.512-.293-.707L14.707 11H13.5V8.5h1.207l-.707-.707c.195-.195.451-.293.707-.293H15.5v2.293l.707.707c.195.195.293.451.293.707V13.5h.586c.256 0 .512-.098.707-.293l2-2c.195-.195.293-.451.293-.707V9.707c0-.256-.098-.512-.293-.707z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-10 border-t border-gray-700 pt-8">
+            &copy; 2024 SoleMate. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

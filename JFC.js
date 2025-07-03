@@ -33,7 +33,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   showNotification('Registration successful! Please proceed with payment.', 'success');
   
   // Log registration details
-  console.log('Registration details:', { name, phone, email, package });
+  console.log('Registration details:', { name, phone, email, preferredTime ,package });
   
   // Prepare notifications
   const whatsappUrl = `https://wa.me/${adminPhone}?text=New%20Registration%20for%20JFC%20Box%20Cricket%0AName%3A%20${encodeURIComponent(name)}%0APhone%3A%20${encodeURIComponent(phone)}%0AEmail%3A%20${encodeURIComponent(email || 'Not provided')}%0APackage%3A%20${encodeURIComponent(packageText)}`;
